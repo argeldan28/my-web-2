@@ -5,7 +5,7 @@ import 'bootstrap-icons/font/bootstrap-icons.css';
 
 function Home(){
     return(
-        <section className='home'>
+        <section className='home' id='home'>
             
         
 

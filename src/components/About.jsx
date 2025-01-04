@@ -2,7 +2,7 @@ import './About.css';
 
 function About(){
     return(
-        <section className="about">
+        <section className="about" id='about'>
             <h1>About <span>Me</span></h1>
             <div className="my-img">
                 <img src="PROFILOCV.png" alt="Profile" className='profile-img'/>

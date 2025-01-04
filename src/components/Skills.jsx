@@ -15,7 +15,7 @@ function Skills(){
     ];
 
     return(
-        <section className='skills'>
+        <section className='skills' id='skills'>
             <h1>My <span>Skills</span></h1>
             <div className="skills-row">
                 <div className="skills-col">

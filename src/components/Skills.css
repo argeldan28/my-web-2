@@ -19,7 +19,7 @@
 }
 
 .skills-row{
-    width: 100%;
+    width: 70%;
 }
 
 
@@ -99,3 +99,9 @@
     width: 70%;
 } */
 
+@media (max-width: 768px) {
+  
+    .skills-row{
+        width: 100%;
+    }
+}
