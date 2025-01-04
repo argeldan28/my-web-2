@@ -43,6 +43,25 @@
     font-size: 1.7rem;
     display: flex;
     justify-content: space-between;
+    margin-bottom: 0 !important;
+}
+
+.skill-detail{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.skill-name-img{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.skill-name-img img{
+    width: 2rem;
+    height: auto;
 }
 
 /* .skills-content .skill-progress h3 span{

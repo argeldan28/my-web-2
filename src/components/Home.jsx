@@ -27,7 +27,7 @@ function Home(){
                     </div>
                 </div>
 
-                <div>
+                <div className='code-img'>
                     <img src="/public/code.png" alt="" />
                 </div>
             </div>
