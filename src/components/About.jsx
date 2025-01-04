@@ -10,8 +10,16 @@ function About(){
             </div>
 
             <div className='my-info'>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur nesciunt quo odio est eos repellat cum nulla quasi vitae similique.
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur nesciunt quo odio est eos repellat cum nulla quasi vitae similique.
+                <p className=''>
+                    I graduated in Electrical Technology, but over time I discovered a 
+                    strong passion for programming. This passion led me to attend courses 
+                    where I learned various programming languages and gained valuable skills.
+                    I am constantly improving myself and staying open to learning new 
+                    technologies. I enjoy solving problems, building creative projects, 
+                    and I am eager to grow as a developer and contribute to exciting teams 
+                    and projects.
+                </p>
+            
             </div>
         </section>
     )

@@ -32,6 +32,15 @@
     color: var(--color-2);
 }
 
+.home .home-btn span{
+    color: #274c77;
+}
+
+.home .home-btn{
+    display: flex;
+    flex-direction: row;
+}
+
 .my-name{
     font-size: 4rem;
     font-weight: 600;
@@ -175,6 +184,11 @@ button:hover {
     button{
         width: 80%;
     }
+
+    .home .home-btn{
+        display: flex;
+        flex-direction: column;
+    }
 }
 
 
@@ -190,12 +204,11 @@ button:hover {
     }
 
     .my-role{
-        font-size: 1.2rem;
-        letter-spacing: 2px;
+        font-size: 1rem;
     }
 
-    .my-description{
-        font-size: 0.8rem;
+    .my-role{
+        font-size: 1rem;
     }
 
     button{

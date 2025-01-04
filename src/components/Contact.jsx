@@ -42,9 +42,10 @@ function Contact(){
             </div>
 
             <div className='home-icon'>
-                <i className="bi bi-facebook"></i>
-                <i className="bi bi-github"></i>
-                <i className="bi bi-linkedin"></i>
+            <div className='home-icon'>
+                        <a href="https://github.com/argeldan28"><i className="bi bi-github"></i></a>
+                        <a href="https://www.linkedin.com/in/argel-dan-alcantara-23570917b/"><i className="bi bi-linkedin"></i></a>
+                    </div>
             </div>
         </section>
     )
