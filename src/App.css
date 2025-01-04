@@ -1,0 +1,19 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --color-1: #e7ecef;
+    --color-2: #274c77;
+    --color-3: #6096ba;
+    --color-4: #a3cef1;
+    --color-5: #8b8c89;
+}
+
+body {
+    width: 100%;
+}
+

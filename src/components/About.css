@@ -1,0 +1,125 @@
+:root {
+    --color-1: #e7ecef;
+    --color-2: #274c77;
+    --color-3: #6096ba;
+    --color-4: #a3cef1;
+    --color-5: #8b8c89;
+}
+
+.about{
+    width: 100%;
+    background-color: var(--color-3);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    padding: 5rem 3rem;
+}
+
+.about h1{
+    font-size: 3rem;
+}
+
+.my-img{
+    position: relative;
+    width: 25rem;
+    height: 25rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.my-img img{
+    width: 85%;
+    border-radius: 50%;
+    border: 0.2rem solid var(--color-2);
+    transition: transform 1s ease;
+    transition-delay: 1;
+}
+
+
+.my-img .circle-spin{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border-top: 0.2rem solid transparent;
+    border-bottom: 0.2rem solid transparent;
+    border-left: 0.2rem solid var(--color-2);
+    border-right: 0.2rem solid var(--color-2);
+    animation: spin 7s linear infinite forwards;
+}
+
+@keyframes spin {
+    0% {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+    100% {
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+}
+
+@media (max-width: 768px) {
+    .my-img {
+        width: 20rem;
+        height: 20rem;
+    }
+
+    .my-img img {
+        width: 90%;
+    }
+
+    .about h1 {
+        font-size: 2.5rem;
+    }
+
+    .my-info {
+        max-width: 80%;
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .my-img {
+        width: 15rem;
+        height: 15rem;
+    }
+
+    .my-img img {
+        width: 80%;
+    }
+
+    .about h1 {
+        font-size: 2rem;
+    }
+
+    .my-info {
+        max-width: 90%;
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 420px) {
+    .my-img {
+        width: 12rem;
+        height: 12rem;
+    }
+
+    .my-img img {
+        width: 75%;
+    }
+
+    .about h1 {
+        font-size: 1.8rem;
+    }
+
+    .my-info {
+        max-width: 95%;
+        font-size: 0.8rem;
+    }
+}
