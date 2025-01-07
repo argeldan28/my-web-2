@@ -20,7 +20,12 @@ function Education() {
 
                                 <h3>Web Programming</h3>
                                 <h4>forma.temp</h4>
-                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex, sint!</p>
+                                <p> 
+                                    Developed and managed dynamic, interactive web pages. Gained 
+                                    skills in HTML, CSS, andJavaScript for frontenddevelopment, 
+                                    with server-side programming using Node.js and Prisma.js ORM 
+                                    for efficient databasemanagement.
+                                </p>
                             </div>
                         </div>
 
@@ -32,7 +37,12 @@ function Education() {
                                 </div>
                                 <h3>Junior Java Developer</h3>
                                 <h4>Generation Italy</h4>
-                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex, sint!</p>
+                                <p>
+                                    500-hour course for Junior Java Developer. Provideda solid 
+                                    foundation in object-oriented programming and Javalanguage, as 
+                                    well as core frontend programming languages (HTML, CSS, 
+                                    JavaScript).
+                                </p>
                             </div>
                         </div>
 
@@ -44,7 +54,11 @@ function Education() {
                                 </div>
                                 <h3>Diploma in Electrical Technology</h3>
                                 <h4>Istituto di Istruzione Superiore G. Giorgi, Milan</h4>
-                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex, sint!</p>
+                                <p>
+                                    Acquired foundational knowledge in electrical systems, circuits, and technology. 
+                                    Developed practical skills in troubleshooting, maintenance, and installation of electrical equipment.
+                                    Learned to work with various electrical components and systems, ensuring safety and compliance with industry standards.
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -62,7 +76,11 @@ function Education() {
                                     August 2024
                                 </div>
                                 <h3>Cinema Website</h3>
-                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex, sint!</p>
+                                <p>
+                                    Created a cinema website where users can browse movies, view showtimes, and book tickets. 
+                                    Used Angular for the front-end to build a responsive and user-friendly interface, and Java Spring for the back-end to handle the server-side logic. 
+                                    Integrated an API to show real-time movie data and ensure a smooth user experience.
+                                </p>
                             </div>
                         </div>
 
@@ -70,10 +88,13 @@ function Education() {
                             <div className="content">
                                 <div className="year">
                                     <i className="bi bi-calendar3"></i>
-                                    August 2024
+                                    September 2024
                                 </div>
-                                <h3>Cinema Website</h3>
-                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex, sint!</p>
+                                <h3>Pokedex</h3>
+                                <p>
+                                    Created a fully interactive Pokedex application that allows users to search and filter Pokémon by various attributes. 
+                                    Implemented using HTML, CSS, JavaScript, and integrated data from the official Pokémon API. The project helped enhance skills in working with APIs and dynamic content rendering.
+                                </p>
                             </div>
                         </div>
 
