@@ -63,8 +63,7 @@ function Contact(){
                         <button type='submit' className='btn'>Submit</button>
                     </div>
 
-                     {/* Messaggio di feedback */}
-                {status && <p className={`status-message ${status.includes('Success') ? 'success' : 'error'}`}>{status}</p>}
+                    {status && <p className={`status-message ${status.includes('Success') ? 'success' : 'error'}`}>{status}</p>}
                 </form>
             </div>
 

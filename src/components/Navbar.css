@@ -35,13 +35,16 @@ ul{
     gap: 30px;
     font-size: 1.8rem;
     list-style-type: none;
+    transition: all 0.5 ease-in-out;
 }
 
-nav a{
+nav a, .bi{
     position: relative;
     text-decoration: none;
     color: var(--color-2);
 }
+
+
 
 nav a::after{
     content: '';
@@ -54,43 +57,42 @@ nav a::after{
     transition: width 0.8s ease;
 }
 
-nav a:hover::after{
+nav ul a:hover::after{
     width: 100%;
+}
+
+.hamburger-menu{
+    display: none;
+    font-size: 2rem;
+    cursor: pointer;
 }
 
 
 @media (max-width: 768px) {
-    nav {
-        flex-direction: column;
-        padding: 0px;
+   
+    .hamburger-menu{
+        display: block;
     }
 
     ul{
-        font-size: 1.5rem;
-    }
-
-    .logo{
-        width: 60px;
-    }
-
-   
-}
-
-@media (max-width: 400px) {
-    nav {
+        display: none;
         flex-direction: column;
-        justify-content: center;
-        padding: 0;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        width: 100%;
+        background-color: var(--color-1);
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        
     }
 
-    ul{
-        font-size: 1.2rem;
-        padding: 0;
+    ul.menu-open {
+        display: flex;
     }
 
     .logo{
-        width: 60px;
+        width: 5rem;
     }
 
-   
 }

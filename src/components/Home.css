@@ -204,11 +204,8 @@ button:hover {
     }
 
     .my-role{
-        font-size: 1rem;
-    }
-
-    .my-role{
-        font-size: 1rem;
+        font-size: 1.5rem;
+        display: inline;
     }
 
     button{
