@@ -1,6 +1,38 @@
-import './Education.css'
+import './Education.css';
+import { useState } from 'react';
+import Modal from './Modal';
 
 function Education() {
+
+
+    const [isModalOpen, setIsModalOpen] = useState(false);
+
+    const projectImages = {
+        cinema: [
+            { src: 'public/cinema1.png', alt: 'Cinema Image 1' },
+            { src: 'public/cinema2.png', alt: 'Cinema Image 2' },
+            { src: 'public/cinema3.png', alt: 'Cinema Image 3' },
+            { src: 'public/cinema4.png', alt: 'Cinema Image 4' },
+        ],
+        pokedex: [
+            { src: 'public/pokedex1.png', alt: 'Pokedex Image 1' },
+            { src: 'public/pokedex2.png', alt: 'Pokedex Image 2' },
+            { src: 'public/pokedex3.png', alt: 'Pokedex Image 3' },
+        ],
+    };
+
+    const [selectedProject, setSelectedProject] = useState(null);
+
+    const openModal = (projectKey) => {
+        setSelectedProject(projectKey);
+        setIsModalOpen(true);
+    };
+    
+    const closeModal = () => {
+        setIsModalOpen(false);
+        setSelectedProject(null);
+    };
+
     return(
         <section className='education'>
             <h1>My <span>Journey</span></h1>
@@ -69,7 +101,8 @@ function Education() {
 
                     <div className="education-box">
 
-                        <div className="education-content">
+                    <div className="education-content">
+                        <button onClick={() => openModal('cinema')}>
                             <div className="content">
                                 <div className="year">
                                     <i className="bi bi-calendar3"></i>
@@ -82,9 +115,11 @@ function Education() {
                                     Integrated an API to show real-time movie data and ensure a smooth user experience.
                                 </p>
                             </div>
-                        </div>
+                        </button>
+                    </div>
 
-                        <div className="education-content">
+                    <div className="education-content">
+                        <button onClick={() => openModal('pokedex')}>
                             <div className="content">
                                 <div className="year">
                                     <i className="bi bi-calendar3"></i>
@@ -96,7 +131,14 @@ function Education() {
                                     Implemented using HTML, CSS, JavaScript, and integrated data from the official Pokémon API. The project helped enhance skills in working with APIs and dynamic content rendering.
                                 </p>
                             </div>
-                        </div>
+                        </button>
+                    </div>
+
+                    <Modal 
+                        images={selectedProject ? projectImages[selectedProject] : []} 
+                        isOpen={isModalOpen} 
+                        closeModal={closeModal} 
+                    />
 
                         
                     </div>

@@ -83,7 +83,7 @@
 }
 
 
-button {
+.home button {
     position: relative;
     background-color: var(--color-1);
     border: 1px solid var(--color-4);
@@ -96,7 +96,7 @@ button {
 }
 
 
-button::after {
+.home button::after {
     content: '';
     position: absolute;
     top: 0;
@@ -108,11 +108,11 @@ button::after {
     z-index: -1; 
 }
 
-button:hover::after {
+.home button:hover::after {
     width: 100%; 
 }
 
-button:hover {
+.home button:hover {
     color: var(--color-1); 
 }
 
