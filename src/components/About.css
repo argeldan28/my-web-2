@@ -44,6 +44,7 @@
     font-size: 1.2rem;
     text-align: justify;
     margin-top: 1.5rem;
+    padding: 0 5rem;
 }
 
 .my-img .circle-spin{
@@ -88,6 +89,10 @@
     .my-info {
         max-width: 80%;
         font-size: 1rem;
+    }
+
+    .about .my-info p{
+        padding: 0 1rem;
     }
 }
 
