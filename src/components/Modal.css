@@ -25,6 +25,7 @@
 
 .close-btn{
     color: var(--color-2);
+    width: 100%;
     border: none;
     font-size:3rem;
     cursor: pointer;
@@ -37,7 +38,7 @@
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-    flex: 1 1;
+    flex: 1 1 300px;
     flex-direction: column;
     justify-content: center;
     gap: 10px;

@@ -9,16 +9,17 @@ function Education() {
 
     const projectImages = {
         cinema: [
-            { src: 'public/cinema1.png', alt: 'Cinema Image 1' },
-            { src: 'public/cinema2.png', alt: 'Cinema Image 2' },
-            { src: 'public/cinema3.png', alt: 'Cinema Image 3' },
-            { src: 'public/cinema4.png', alt: 'Cinema Image 4' },
+            { src: 'cinema1.png', alt: 'Cinema Image 1' },
+            { src: 'cinema2.png', alt: 'Cinema Image 2' },
+            { src: 'cinema3.png', alt: 'Cinema Image 3' },
+            { src: 'cinema4.png', alt: 'Cinema Image 4' },
         ],
         pokedex: [
-            { src: 'public/pokedex1.png', alt: 'Pokedex Image 1' },
-            { src: 'public/pokedex2.png', alt: 'Pokedex Image 2' },
-            { src: 'public/pokedex3.png', alt: 'Pokedex Image 3' },
+            { src: 'pokedex1.png', alt: 'Pokedex Image 1' },
+            { src: 'pokedex2.png', alt: 'Pokedex Image 2' },
+            { src: 'pokedex3.png', alt: 'Pokedex Image 3' },
         ],
+        marvel: [{ src: 'marvel1.png', alt: 'Marvel Image 1'}]
     };
 
     const [selectedProject, setSelectedProject] = useState(null);
@@ -129,6 +130,22 @@ function Education() {
                                 <p>
                                     Created a fully interactive Pokedex application that allows users to search and filter Pokémon by various attributes. 
                                     Implemented using HTML, CSS, JavaScript, and integrated data from the official Pokémon API. The project helped enhance skills in working with APIs and dynamic content rendering.
+                                </p>
+                            </div>
+                        </button>
+                    </div>
+
+                    <div className="education-content">
+                        <button onClick={() => openModal('marvel')}>
+                            <div className="content">
+                                <div className="year">
+                                    <i className="bi bi-calendar3"></i>
+                                    January 2025
+                                </div>
+                                <h3>Marvel Heroes</h3>
+                                <p>
+                                    I developed a simple website using the Marvel API that allows users to search for their favorite heroes. 
+                                    The app provides details about the heroes and image, ensuring an interactive and engaging experience for Marvel fans.
                                 </p>
                             </div>
                         </button>
